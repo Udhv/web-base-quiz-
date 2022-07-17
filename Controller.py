@@ -37,7 +37,8 @@ class Question:
         
 
 question_list=[]
-choice=int(input("Enter Choice :"))
+# choice=int(input("Enter Choice :"))
+choice = 1
 if choice == 1 :
     for x in range(len(free.q1)):
         q=(free.q1[x])
