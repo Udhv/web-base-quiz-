@@ -51,7 +51,7 @@ else:
 def quiz():
     return render_template("quiz.html",question_list=question_list)
 
-webbrowser.get("google-brave").open("https://tinyurl.com/yjh94cwb.com")
+# webbrowser.get("google-brave").open("https://tinyurl.com/yjh94cwb.com")
 
 @app.route("/submitquiz",methods=['POST','GET'])
 
