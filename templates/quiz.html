@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Quiz Application</title>
+	<style>
+			body {background-color: indigo;}
+			h2   {color: red;} 
+ 			h3	 {color: yellow;} 
+			h1   {text-align: center;
+				   color: red;}  
+	</style>
+</head>
+<body>
+
+	<h1> Web Base Quiz</h1>
+		<hr />
+	
+	
+		<form action="/submitquiz" method="post">
+			{% for question in question_list %}
+			<h2></h2>
+			
+		<h2> {{loop.index}} {{question.question}}</h2>
+		
+			<h3><span style="font-size: 25px;"><input type="radio" name="{{question.q_id}}" value="{{question.option1}}" required>{{question.option1}}
+			<input type="radio" name="{{question.q_id}}" value="{{question.option2}}" required>{{question.option2}}			
+			<input type="radio" name="{{question.q_id}}" value="{{question.option3}}" required>{{question.option3}}</h3>
+		    </span>
+		<br/>
+			{% endfor %}
+
+			<br><br>
+			
+			<input type="submit" name=" submitform" value="Submit"> 
+		</form>
+			
+
+		
+</body>
+</html>
