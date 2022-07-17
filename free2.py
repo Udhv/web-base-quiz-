@@ -44,7 +44,7 @@ for x in range(15):
     
 @app.route("/")
 def quiz():
-    return render_template("quiz.html",question_list=question_list)
+    return render_template("quizic.html",question_list=question_list)
 
 @app.route("/submitquiz",methods=['POST','GET'])
 
