@@ -1,7 +1,7 @@
 
 from flask import Flask, render_template, request
 import free
-import webbrowser
+
 
 
 app = Flask(__name__)
@@ -51,7 +51,7 @@ else:
 def quiz():
     return render_template("quiz.html",question_list=question_list)
 
-# webbrowser.get("google-brave").open("https://tinyurl.com/yjh94cwb.com")
+
 
 @app.route("/submitquiz",methods=['POST','GET'])
 
