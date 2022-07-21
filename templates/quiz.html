@@ -23,9 +23,9 @@
 			
 		<h2> {{loop.index}} {{question.question}}</h2>
 		
-			<h3><span style="font-size: 25px;"><input type="radio" name="{{question.q_id}}" value="{{question.option1}}" required>{{question.option1}}
-			<input type="radio" name="{{question.q_id}}" value="{{question.option2}}" required>{{question.option2}}			
-			<input type="radio" name="{{question.q_id}}" value="{{question.option3}}" required>{{question.option3}}</h3>
+			<h3><span style="font-size: 25px;"><input type="radio" name="{{question.q_id}}" value="{{question.option1}}" >{{question.option1}}
+			<input type="radio" name="{{question.q_id}}" value="{{question.option2}}" >{{question.option2}}			
+			<input type="radio" name="{{question.q_id}}" value="{{question.option3}}">{{question.option3}}</h3>
 		    </span>
 		<br/>
 			{% endfor %}
