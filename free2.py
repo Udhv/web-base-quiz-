@@ -70,13 +70,17 @@ def choise():
 @app.route("/submitquiz",methods=['POST','GET'])
 def submit():
     correct_count=0
+    incorrect_count=0
     for question in question_list:
         question_id=str(question.q_id)
-        selected_option=request.form[question_id]
+        selected_option=request.form.get(question_id)
         correct_option=question.get_correct_option()
         if selected_option==correct_option:
             correct_count=correct_count+1
+        else:
+            incorrect_count+=1
     correct_count=str(correct_count)
-    return correct_count
+    incorrect_count=str(incorrect_count)
+    return return ('<h1 style="text-align:center; background-color:red;">'+"<br>"+"<br>"+"<br>"+"<br>"+"<br>"+"<br>"+"</h1>"+'<h1 style="text-align:center; background-color:yellow;">'+p+correct_count+"<br>"+o+incorrect_count+'<h1 style="text-align:center; background-color:red;">'+"<br>"+"<br>"+"<br>"+"<br>"+"<br>"+"<br>"+"<br>"+"</h1>")
 if __name__ == "__main__":
     app.run(debug=True)
