@@ -50,19 +50,19 @@ def choise():
                 q=(free.q2[x])
                 q2=Question(q[0],q[1],q[2],q[3],q[4],q[5])
                 question_list.append(q2)
-            return render_template("main.html",question_list=question_list)
+            return render_template("qiuz.html",question_list=question_list)
     elif hoise=="3":
                     for x in range(len(free.q3)):
                         q=(free.q3[x])
                         q3=Question(q[0],q[1],q[2],q[3],q[4],q[5])
                         question_list.append(q3)
-                    return render_template("main.html",question_list=question_list)
+                    return render_template("quiz.html",question_list=question_list)
     elif hoise=="4":
                             for x in range(len(free.q4)):
                                 q=(free.q4[x])
                                 q4=Question(q[0],q[1],q[2],q[3],q[4],q[5])
                                 question_list.append(q4)
-                            return render_template("main.html",question_list=question_list)
+                            return render_template("quiz.html",question_list=question_list)
     else:
                         return "sorry enter valid choise"
 
