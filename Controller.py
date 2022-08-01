@@ -54,6 +54,6 @@ def submit():
             incorrect_count+=1
     correct_count=str(correct_count)
     incorrect_count=str(incorrect_count)
-    return ('<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">'+'<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-indigo.css">'+'<h1 class="w3-theme-l3">'+'<p class="w3-theme">'+'Your Correct Answer Score is '+correct_count+'<br>'+'Your Incorrect Answer Score is '+incorrect_count+'<br>'+'<br>'+'</p>'+'</h1>')
+    return ('<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">'+'<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-indigo.css">'+'<h1 class="w3-theme-l3" style="text-align: center">'+'<br>'+'<br>'+'<br>'+'<br>'+'<br>'+'<br>'+'<p class="w3-theme">'+'Your Correct Answer Score is '+correct_count+'<br>'+'Your Incorrect Answer Score is '+incorrect_count+'<br>'+'<br>'+'<br>'+'<br>'+'<br>'+'<br>'+'<br>'+'<br>'+'<br>'+'<br>'+'<br>'+'</p>'+'</h1>')
 if __name__ == "__main__":
     app.run(debug=True)
