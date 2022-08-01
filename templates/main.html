@@ -17,24 +17,7 @@
 		<input type="submit" name="submit">
 		
 		</form>
-		<form action="/submitquiz" method="post">
-			{% for question in question_list %}
-			<h2></h2>
-			
-		<h2> {{loop.index}} {{question.question}}</h2>
 		
-			<h3><span style="font-size: 25px;"><input type="radio" name="{{question.q_id}}" value="{{question.option1}}" >{{question.option1}}
-			<br><input type="radio" name="{{question.q_id}}" value="{{question.option2}}" >{{question.option2}}			
-			<br><input type="radio" name="{{question.q_id}}" value="{{question.option3}}" >{{question.option3}}
-			<br><input type="radio" name="{{question.q_id}}" value="{{question.option4}}" >{{question.option4}}</h3>
-		    </span>
-		<br/>
-			{% endfor %}
-
-			<br><br>
-			  
-			<p><input type="submit" name=" submitform" value="Submit"></p> 
-		</form>
 		</center>	
 
 		
