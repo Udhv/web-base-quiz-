@@ -16,24 +16,6 @@
 		<input type="text" name="ch" value="">
 		<input type="submit" name="submit">
 		
-		{% for question in question_list %}
-			<h2></h2>
-			
-			
-		<h2> {{loop.index}} {{question.question}}</h2>
-		
-			
-				<input type="radio" name="{{question.q_id}}" value="{{question.option1}}" required>{{question.option1}}<br>
-				<input type="radio" name="{{question.q_id}}" value="{{question.option2}}" required>{{question.option2}}<br>	
-				<input type="radio" name="{{question.q_id}}" value="{{question.option3}}" required>{{question.option3}}<br>
-				
-			
-			{% endfor %}
-
-			<br><br>
-			
-			
-			<input type="submit" name=" submitform" value="Submit"> 
 		</form>
 		</center>	
 
