@@ -6,29 +6,29 @@
 <title>Quiz Application</title>
 	
 </head>
-<body style="text-align: center " class="w3-theme-l3">
+<body >
 
 	<h1> Web Base Quiz</h1>
 		<hr />
 	
 	
-		<form action="/submitquiz" method="post">		
+		<form action="/submitquiz" method="post" style="text-align: center">		
 			{% for question in question_list %}
 			<h2></h2>
 		
-		<h2 class="w3-theme">Q. {{question.question}}
+		<h2 class="w3-theme" style="text-align: center"><ui> {{loop.index}} {{question.question}}
 		
 			<h3 class="w3-theme-l1"><span style="font-size: 25px;"><input type="radio" name="{{question.q_id}}" value="{{question.option1}}" >{{question.option1}}
 			<input type="radio" name="{{question.q_id}}" value="{{question.option2}}" >{{question.option2}}			
 			<input type="radio" name="{{question.q_id}}" value="{{question.option3}}">{{question.option3}}</h3></h2>
 		    </span>
-		<br/>
+		<br/></ui>
 			{% endfor %}
 			
 			<br><br>
 			
                   	
-			<input type="submit" name=" submitform" value="Submit" class="w3-theme"> 
+			<input type="submit" name=" submitform" value="Submit" class="w3-theme" style="width: 20em;  height: 5em;"> 
 		</form>
 			
 
