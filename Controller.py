@@ -37,6 +37,8 @@ for x in range(len(free.q1)):
 @app.route("/")
 def quiz():
     return render_template("main.html",question_list=question_list)
+def quiz():
+    return render_template("quiz.html",question_list=question_list)
 
 @app.route("/submitquiz",methods=['POST','GET'])
 def submit():
