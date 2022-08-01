@@ -12,10 +12,10 @@
 		<hr />
 	
 	
-		<form action="/submitquiz" method="post">		
+		<form action="/submitquiz" method="post" class="w3-theme-l1">		
 			{% for question in question_list %}
 			<h2></h2>
-		<li class="w3-theme-l2">
+		
 		<h2> {{loop.index}} {{question.question}}</h2>
 		
 			<h3><span style="font-size: 25px;"><input type="radio" name="{{question.q_id}}" value="{{question.option1}}" >{{question.option1}}
@@ -26,7 +26,7 @@
 			{% endfor %}
 			
 			<br><br>
-			</li>
+			
                   	
 			<input type="submit" name=" submitform" value="Submit" class="w3-theme"> 
 		</form>
