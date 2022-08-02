@@ -3,6 +3,15 @@
 <head>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-indigo.css">
+<style>
+.myDiv {
+ margin: auto;
+  background-color: lightyellow;    
+ align-items:center;
+  width: 500px;
+  height: 200px;
+}
+</style>
 <title>Quiz Application</title>
 	
 </head>
@@ -12,15 +21,16 @@
 		<hr />
 	
 	
-		<form action="/submitquiz" method="post" style="text-align">		
+		<form action="/submitquiz" method="post" style="text-align">
+			<div class="myDiv">		
 			{% for question in question_list %}
 			<h2></h2>
 		
 		<h2 class="w3-theme" style="text-align: center;border: 5px solid blue;">Q. {{loop.index}} {{question.question}}
-		
-			<h3 class="w3-theme-l1" style="text-align: center;border: 5px solid blue;"><span style="font-size: 35px;"><input type="radio" name="{{question.q_id}}" value="{{question.option1}}" >{{question.option1}}<br>
-			<input type="radio" name="{{question.q_id}}" value="{{question.option2}}" >{{question.option2}}<br>			
-			<input type="radio" name="{{question.q_id}}" value="{{question.option3}}">{{question.option3}}</h3></h2>
+		<pre><h3 class="w3-theme-l1" style="text-align: center;border: 5px solid blue;"><span style="font-size: 35px;">
+<input type="radio" name="{{question.q_id}}" value="{{question.option1}}" >{{question.option1}}
+<input type="radio" name="{{question.q_id}}" value="{{question.option2}}" >{{question.option2}}			
+<input type="radio" name="{{question.q_id}}" value="{{question.option3}}">{{question.option3}}</h3></h2>
 		    </span>
 		<br/>
 			{% endfor %}
@@ -32,6 +42,7 @@
 			</h1>
 			<br>
 			<br>
+		</div>
 		</form>
 			
 
