@@ -16,9 +16,9 @@
 			{% for question in question_list %}
 			<h2></h2>
 		
-		<h2 class="w3-theme" style="text-align: center;border: 10px solid blue;">Q. {{loop.index}} {{question.question}}
+		<h2 class="w3-theme" style="text-align: center;border: 10px solid yellow;">Q. {{loop.index}} {{question.question}}
 		
-			<h3 class="w3-theme-l1" style="text-align: center"><span style="font-size: 25px;"><input type="radio" name="{{question.q_id}}" value="{{question.option1}}" >{{question.option1}}
+			<h3 class="w3-theme-l1" style="text-align: center;border: 10px solid yellow;"><span style="font-size: 25px;"><input type="radio" name="{{question.q_id}}" value="{{question.option1}}" >{{question.option1}}
 			<input type="radio" name="{{question.q_id}}" value="{{question.option2}}" >{{question.option2}}			
 			<input type="radio" name="{{question.q_id}}" value="{{question.option3}}">{{question.option3}}</h3></h2>
 		    </span>
