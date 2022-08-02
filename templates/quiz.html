@@ -5,8 +5,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-indigo.css">
 <style>
 .myDiv {
- margin: auto;
-  background-color: lightyellow;    
+ margin: auto;   
  align-items:center;
   width: 500px;
   height: 200px;
@@ -27,10 +26,10 @@
 			<h2></h2>
 		
 		<h2 class="w3-theme" style="text-align: center;border: 5px solid blue;">Q. {{loop.index}} {{question.question}}
-		<h3 class="w3-theme-l1" style="text-align: center;border: 5px solid blue;"><span style="font-size: 35px;"><br>
+		<h4class="w3-theme-l1" style="text-align: center;border: 5px solid blue;"><span style="font-size: 35px;"><br>
 <input type="radio" name="{{question.q_id}}" value="{{question.option1}}" >{{question.option1}}<br>
 <input type="radio" name="{{question.q_id}}" value="{{question.option2}}" >{{question.option2}}<br>			
-<input type="radio" name="{{question.q_id}}" value="{{question.option3}}">{{question.option3}}</h3></h2>
+<input type="radio" name="{{question.q_id}}" value="{{question.option3}}">{{question.option3}}</h4></h2>
 		    </span>
 		<br/>
 			{% endfor %}
