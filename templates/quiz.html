@@ -2,7 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-red.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-orange.css">
 <title>Quiz Application</title>
 	
 </head>
@@ -16,7 +16,7 @@
 			{% for question in question_list %}
 			<h2></h2>
 		
-		<h2 class="w3-theme" style="text-align: center">Q. {{loop.index}} {{question.question}}
+		<h2 class="w3-theme" style="text-align: center;border: 25px;">Q. {{loop.index}} {{question.question}}
 		
 			<h3 class="w3-theme-l1" style="text-align: center"><span style="font-size: 25px;"><input type="radio" name="{{question.q_id}}" value="{{question.option1}}" >{{question.option1}}
 			<input type="radio" name="{{question.q_id}}" value="{{question.option2}}" >{{question.option2}}			
@@ -25,12 +25,11 @@
 		<br/>
 			{% endfor %}
 			
-			<br>
+			<br><br>
 			
-                  <h1 style="text-align: center; font-size: 60px;">	
+ <h1 style="text-align: center; font-size: 75px;">	
 			<input type="submit" name=" submitform" value="Submit" class="w3-theme">
 			</h1>
-			<br>
 			<br>
 			<br>
 		</form>
